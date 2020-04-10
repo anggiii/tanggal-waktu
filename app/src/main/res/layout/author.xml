@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
         android:orientation="vertical">
@@ -89,6 +90,65 @@
                 android:textColor="@color/huruf"
                 android:layout_below="@id/anggi"
                 android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/khal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/khalipah"
+                android:layout_below="@id/nolay"
+                android:paddingTop="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/khalipah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/khal"
+                android:textColor="@color/huruf"
+                android:layout_below="@id/khal"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/nay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nay"
+                android:layout_below="@id/khalipah"
+                android:paddingTop="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/nayla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nayla"
+                android:textColor="@color/huruf"
+                android:layout_below="@id/nay"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/ustdzh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ustzh"
+                android:textColor="@color/huruf"
+                android:layout_below="@id/nayla"
+                android:textSize="15sp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/halo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ustdzh"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="41dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="60dp"
+                android:text="@string/manfaat"
+                android:textSize="17sp"
+                tools:ignore="RtlSymmetry" />
 
 
         </RelativeLayout>

@@ -24,6 +24,7 @@ import java.util.Calendar;
 public class MainActivity extends Fragment implements View.OnClickListener {
     Button button;
     CardView crd1, crd2, crd3, crd4, crd5, crd6, crd7, crd8, crd9;
+    private Toolbar toolbar;
 
     @Nullable
     @Override
@@ -31,11 +32,8 @@ public class MainActivity extends Fragment implements View.OnClickListener {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_main, container, false);
 
-        Toolbar toolbar = view.findViewById(R.id.toolbar);
-        AppCompatActivity activity = (AppCompatActivity) getActivity();
-        activity.setSupportActionBar(toolbar);
-        activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        /*toolbar = view.findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);*/
         Calendar calendar = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance(DateFormat.MEDIUM).format(calendar.getTime());
         TextView textViewDate = view.findViewById(R.id.textdate);

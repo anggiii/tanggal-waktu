@@ -35,6 +35,8 @@ public class searchview extends AppCompatActivity {
 
         adapter = new searchviewAdapter(this, getMyList());
         rv.setAdapter(adapter);
+
+
     }
 
     private ArrayList<model> getMyList() {
@@ -86,8 +88,14 @@ public class searchview extends AppCompatActivity {
         SearchView searchView = (SearchView) searchItem.getActionView();*/
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.optionmenu, menu);
-        MenuItem searchIem = menu.findItem(R.id.search);
-        final SearchView searchView = (SearchView) searchIem.getActionView();
+
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView =
+                (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override

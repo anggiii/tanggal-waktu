@@ -5,11 +5,11 @@
         android:id="@+id/search"
         android:title="@string/search"
         android:icon="@drawable/search_icon"
-        app:showAsAction="ifRoom|collapseActionView"
+        app:showAsAction="collapseActionView|ifRoom"
         app:actionViewClass="androidx.appcompat.widget.SearchView"/>
 
     <item
-       android:id="@+id/daftar"
+        android:id="@+id/daftar"
         android:title="@string/daftarisi"
         app:showAsAction="never"/>
 

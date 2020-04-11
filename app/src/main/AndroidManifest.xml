@@ -15,7 +15,7 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppThemeNoActionBar">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".tanyajawab"></activity>
         <activity android:name=".petajarak" />
         <activity android:name=".tatacarahaji" />
